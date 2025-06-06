@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="data:image/jpeg;base64,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" alt="Netflix Logo" class="logo">
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>New & Popular</li>
+            <li>My List</li>
+        </ul>
+        <img src="images/avatar.png" alt="User Avatar" class="avatar">
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Featured Movie Title</h1>
+            <p>Watch the most exciting movies and TV shows.</p>
+            <button class="btn-play">Play</button>
+            <button class="btn-info">More Info</button>
+        </div>
+    </header>
+
+    <!-- Movie Carousels -->
+    <section class="movies-section">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-row">
+            <img src="noah.jpg" alt="Movie 1">
+            <img src="venom.png" alt="Movie 2">
+            <img src="inception.jpg" alt="Movie 3">
+            <img src="dark.jpg" alt="Movie 4">
+            <img src="image.png" alt="Movie 5">
+            <img src="ghost.jpg" alt="Movie 6">
+            <img src="anabela.jpg" alt="Movie 7">
+            <img src="exorcist.jpg" alt="Movie 8">
+            <img src="smile.jpg" alt="Movie 9">
+        </div>
+    </section>
+
+    <section class="movies-section">
+        <h2>Trending Now</h2>
+        <div class="movie-row">
+            <img src="kabir.jpg" alt="Movie 5">
+            <img src="devdas.jpg" alt="Movie 6">
+            <img src="atrangi.jpg" alt="Movie 7">
+            <img src="uri.jpg" alt="Movie 8">
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
